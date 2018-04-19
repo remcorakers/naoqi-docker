@@ -1,7 +1,7 @@
 FROM ubuntu:17.10
 
 # Install dependencies
-RUN apt-get update && apt-get install -y python-pip iproute2 telnet
+RUN apt-get update && apt-get install -y python-pip iproute2 telnet iputils-ping
 
 # Set the working directory to /naoqi
 WORKDIR /naoqi

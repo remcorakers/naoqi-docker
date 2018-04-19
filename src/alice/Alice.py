@@ -16,8 +16,8 @@ class Alice:
         self.run()
 
     def run(self):
-        self.stand()
-        # self.zora.talk("Hey, I can talk.")
+        # self.stand()
+        self.zora.talk("Hey, I can talk.")
         # self.conversation()
         # self.stand()
 
@@ -39,7 +39,9 @@ class Alice:
 
     def stand(self):
         # Find more at: http://doc.aldebaran.com/2-1/naoqi/motion/alrobotposture.html
-        self.posture_service.goToPosture("Stand")
+        self.zora.goToPosture("Crouch")
+        self.zora.goToPosture("Sit")
+        self.zora.goToPosture("Stand")
 
     def onReceivedWord(self, word):
         if(word[1] > 0.3):

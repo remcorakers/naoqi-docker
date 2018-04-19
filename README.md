@@ -11,4 +11,4 @@
 1. Clone this repo and move into the directory.
 2. Download the [Python SDK for Linux](https://community.aldebaran.com/resources/software) and put it in the root of the folder with the cloned repository. The filename should be `pynaoqi-python2.7-2.1.4.13-linux64.tar.gz`.
 3. Build the container `docker build -t naoqi-python .`
-4. Run the container `docker run -v ``pwd``/src:/naoqi/src -it naoqi-python bash`. This will open a bash prompt from which you can execute your code from the `./src` directory.
+4. Run the container `docker run -v `pwd`/src:/naoqi/src -it naoqi-python bash`. This will open a bash prompt from which you can execute your code from the `./src` directory.
