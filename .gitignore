@@ -1,2 +1,3 @@
 pynaoqi-python2.7-*-linux64.tar.gz
 *.pyc
+.vscode

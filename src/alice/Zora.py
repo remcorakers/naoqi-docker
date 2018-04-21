@@ -17,6 +17,8 @@ class Zora:
 
         # self.sr_service = self.session.service("ALSpeechRecognition")
         self.tts_service = self.session.service("ALTextToSpeech")
+        self.tts_service.setParameter("defaultVoiceSpeed", 50)
+        self.tts_service.setLanguage("Dutch")
         self.posture_service = self.session.service("ALRobotPosture")
         self.memory = self.session.service("ALMemory")
         self.ttsProxy = ALProxy("ALTextToSpeech", self.IP, 9559)
